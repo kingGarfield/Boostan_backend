@@ -1,6 +1,5 @@
-target/
+ target/
 .idea/*
-/src/main/resources/application.properties
 boostan_backend.iml
 pom.xml.tag
 pom.xml.releaseBackup
