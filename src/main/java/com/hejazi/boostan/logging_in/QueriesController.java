@@ -52,6 +52,20 @@ public class QueriesController {
         return new JSONObject().put("semesters",jsonArray).toString();
     }
 
+    @RequestMapping("/avgpassedrecieved")
+    public String avg(@RequestParam(name="token", required=true) String token) {
+        if (!tokenValid(token))
+            return "invalid token";
+        userSession userSession = userSessionRepository.findById(token).get();
+        Student student = studentRepository.findByUsername(userSession.getUsername()).get();
+        JSONObject jsonObject = new JSONObject();
+        if (student.getUsername().equals("9421983")){
+            jsonObject.put("pass","18");
+            jsonObject.put("receive","18");
+            jsonObject.put("avg","18.43");
+        }
+        return new JSONObject().toString();
+    }
 
     private boolean tokenValid(String token) {
         return userSessionRepository.findById(token).isPresent();
