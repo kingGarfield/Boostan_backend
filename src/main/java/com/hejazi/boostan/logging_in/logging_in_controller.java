@@ -59,6 +59,8 @@ public class logging_in_controller {
             String token = cacheUser(student, api_key);
             jsonObject.put("token", token);
             jsonObject.put("message", "signed in successfully.");
+            jsonObject.put("first name",studentRepository.findByUsername(username).get().getFirstName());
+            jsonObject.put("last name",studentRepository.findByUsername(username).get().getLastName());
             return jsonObject.toString();
         }
         jsonObject.put("token", "");
