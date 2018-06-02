@@ -52,7 +52,7 @@ public class QueriesController {
         return new JSONObject().put("semesters",jsonArray).toString();
     }
 
-    @RequestMapping("/avgpassedrecieved")
+    @RequestMapping("/avgpassedreceived")
     public String avg(@RequestParam(name="token", required=true) String token) {
         if (!tokenValid(token))
             return "invalid token";
