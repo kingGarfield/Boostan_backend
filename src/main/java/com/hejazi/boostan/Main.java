@@ -12,9 +12,9 @@ public class Main {
         Console console = System.console();
         System.out.println("The database username :");
         newArgs[0] = new String("--spring.datasource.username=" +
-                console.readLine());
+                "root");
         newArgs[1] = new String("--spring.datasource.password=" +
-                String.copyValueOf(console.readPassword("Enter your secret password: ")));
+                "asleepsleep");
         SpringApplication.run(Main.class, newArgs);
     }
 }
