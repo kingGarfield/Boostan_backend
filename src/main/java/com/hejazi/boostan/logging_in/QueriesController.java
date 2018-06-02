@@ -64,7 +64,7 @@ public class QueriesController {
             jsonObject.put("receive","18");
             jsonObject.put("avg","18.43");
         }
-        return new JSONObject().toString();
+        return jsonObject.toString();
     }
 
     private boolean tokenValid(String token) {
