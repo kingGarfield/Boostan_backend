@@ -1,4 +1,4 @@
-package com.hejazi.boostan.logging_in;
+package com.hejazi.boostan.Controller;
 
 import com.hejazi.boostan.database.mysql.Student;
 import com.hejazi.boostan.database.mysql.studentRepository;

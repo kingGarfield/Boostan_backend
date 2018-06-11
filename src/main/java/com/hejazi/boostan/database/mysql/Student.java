@@ -39,6 +39,9 @@ public class Student {
     private String registerationDate;
 
     @Column
+    private String fatherName;
+
+    @Column
     private String birthDate;
 
     public void setId(int id) { this.id = id; }
@@ -60,6 +63,10 @@ public class Student {
     public String getUsername() {
         return username;
     }
+
+    public String getFatherName() { return fatherName; }
+
+    public void setFatherName(String fatherName) { this.fatherName = fatherName; }
 
     public String getPassword() {
         return password;
