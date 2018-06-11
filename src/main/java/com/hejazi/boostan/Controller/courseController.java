@@ -25,8 +25,8 @@ public class courseController {
     @Autowired
     private studentRepository studentRepository;
 
-    @RequestMapping("/availableCourses")
-    public String availableCourses(@RequestParam(name = "token", required = true) String token) {
+    @RequestMapping("/allCourses")
+    public String allCourses(@RequestParam(name = "token", required = true) String token) {
         if (!tokenValid(token))
             return null;
         JSONArray array = new JSONArray();

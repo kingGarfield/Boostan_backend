@@ -7,6 +7,14 @@ import java.io.Serializable;
 
 @Entity
 public class Semester {
+    @EmbeddedId
+    private key primaryKey;
+
+    @Column(nullable = false)
+    private String status;
+
+    @Column(nullable = true)
+    private double mark;
 
     public int getCourse() {
         return primaryKey.getCourse();
@@ -28,22 +36,25 @@ public class Semester {
         return status;
     }
 
-    public int getMark() {
+    public double getMark() {
         return mark;
     }
-
-    @EmbeddedId
-    private key primaryKey;
-
-    @Column(nullable = false)
-    private String status;
-
-    @Column(nullable = false)
-    private int mark;
 }
 
 @Embeddable
 class key implements Serializable{
+    @Column
+    private int course;
+
+    @Column
+    private int student;
+
+    @Column
+    private int teacher;
+
+    @Column(nullable = false)
+    private int term;
+
     public int getCourse() {
         return course;
     }
@@ -59,16 +70,4 @@ class key implements Serializable{
     public int getTerm() {
         return term;
     }
-
-    @Column
-    private int course;
-
-    @Column
-    private int student;
-
-    @Column
-    private int teacher;
-
-    @Column(nullable = false)
-    private int term;
 }

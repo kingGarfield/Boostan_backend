@@ -17,35 +17,27 @@ public class course {
     @Column
     private int value;
 
-    public int getId() {
-        return id;
-    }
+    @Column
+    private String pishniazCouses;
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public String getName() {
-        return name;
-    }
+    public String getPishniazCouses() { return pishniazCouses; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setPishniazCouses(String pishniazCouses) { this.pishniazCouses = pishniazCouses; }
 
-    public String getType() {
-        return type;
-    }
+    public int getId() { return id; }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+    public void setId(int id) { this.id = id; }
 
-    public int getValue() {
-        return value;
-    }
+    public String getName() { return name; }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
+    public void setName(String name) { this.name = name; }
+
+    public String getType() { return type; }
+
+    public void setType(String type) { this.type = type; }
+
+    public int getValue() { return value; }
+
+    public void setValue(int value) { this.value = value; }
 }
