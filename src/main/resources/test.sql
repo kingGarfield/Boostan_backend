@@ -46,57 +46,57 @@ INSERT INTO student VALUES (9,"سید خندان","0000-00-00 00:00:00","ali@aha
   ,"000000000","123456","+9891111111","0000-00-00 00:00:00","105");
 
 
-INSERT INTO semester VALUES (0,0,4,941,18.5,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (0,0,4,941,18.5,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (0,1,4,941,20,"قبول شده","اعلام شده");
+INSERT INTO semester VALUES (0,1,4,941,20,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (0,2,4,941,19.5,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (0,2,4,941,19.5,"اعلام شده","عادی","قبول شده");
 
-
-# #####
-
-INSERT INTO semester VALUES (1,0,5,941,20,"اعلام شده","قبول شده");
-
-INSERT INTO semester VALUES (1,1,5,941,20,"اعلام شده","قبول شده");
-
-INSERT INTO semester VALUES (1,2,5,941,20,"اعلام شده","قبول شده");
 
 # #####
 
-INSERT INTO semester VALUES (2,0,6,941,18.25,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (1,0,5,941,20,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (2,1,6,941,19.25,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (1,1,5,941,20,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (2,2,6,941,20,"اعلام شده","قبول شده");
-
-# #####
-
-INSERT INTO semester VALUES (3,0,7,941,20,"اعلام شده","قبول شده");
-
-INSERT INTO semester VALUES (3,1,7,941,18,"اعلام شده","قبول شده");
-
-INSERT INTO semester VALUES (3,2,7,941,20,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (1,2,5,941,20,"اعلام شده","عادی","قبول شده");
 
 # #####
 
-INSERT INTO semester VALUES (4,0,8,941,19.5,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (2,0,6,941,18.25,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (4,1,8,941,15,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (2,1,6,941,19.25,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (4,2,8,941,19.5,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (2,2,6,941,20,"اعلام شده","عادی","قبول شده");
 
 # #####
 
-INSERT INTO semester VALUES (5,0,9,941,16.3,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (3,0,7,941,20,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (5,1,9,941,16.3,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (3,1,7,941,18,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (5,2,9,941,17.3,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (3,2,7,941,20,"اعلام شده","عادی","قبول شده");
+
+# #####
+
+INSERT INTO semester VALUES (4,0,8,941,19.5,"اعلام شده","عادی","قبول شده");
+
+INSERT INTO semester VALUES (4,1,8,941,15,"اعلام شده","عادی","قبول شده");
+
+INSERT INTO semester VALUES (4,2,8,941,19.5,"اعلام شده","عادی","قبول شده");
+
+# #####
+
+INSERT INTO semester VALUES (5,0,9,941,16.3,"اعلام شده","عادی","قبول شده");
+
+INSERT INTO semester VALUES (5,1,9,941,16.3,"اعلام شده","عادی","قبول شده");
+
+INSERT INTO semester VALUES (5,2,9,941,17.3,"اعلام شده","عادی","قبول شده");
 
 # #####
 
 INSERT INTO semester VALUES (6,0,3,941,18,"اعلام شده","قبول شده");
 
-INSERT INTO semester VALUES (6,1,3,941,19.5,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (6,1,3,941,19.5,"اعلام شده","عادی","قبول شده");
 
-INSERT INTO semester VALUES (6,2,3,941,19,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (6,2,3,941,19,"اعلام شده","عادی","قبول شده");

@@ -25,8 +25,18 @@ public class Semester {
     public void setMarkType(String markType) { this.markType = markType; }
 
     @Column(nullable = true)
-
     private String markType;
+
+    @Column
+    private String registerType;
+
+    public String getRegisterType() {
+        return registerType;
+    }
+
+    public void setRegisterType(String registerType) {
+        this.registerType = registerType;
+    }
 
     public int getCourse() {
         return primaryKey.getCourse();
