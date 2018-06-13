@@ -37,6 +37,7 @@ public class SemesterController {
                 element.put("mark",semester.getMark());
                 element.put("status",semester.getStatus());
                 element.put("term",semester.getTerm());
+                element.put("markTypr",semester.getMarkType());
                 for (course course:
                      courseRepository.findAll()) {
                     if(course.getId() == semester.getCourse()) {

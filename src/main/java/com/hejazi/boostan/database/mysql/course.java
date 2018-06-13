@@ -20,13 +20,6 @@ public class course {
     @Column
     private String pishniazCouses;
 
-    @Column
-    private String markType;
-
-    public String getMarkType() { return markType; }
-
-    public void setMarkType(String markType) { this.markType = markType; }
-
     public String getPishniazCouses() { return pishniazCouses; }
 
     public void setPishniazCouses(String pishniazCouses) { this.pishniazCouses = pishniazCouses; }

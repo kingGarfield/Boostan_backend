@@ -16,6 +16,18 @@ public class Semester {
     @Column(nullable = true)
     private double mark;
 
+    public void setStatus(String status) { this.status = status; }
+
+    public void setMark(double mark) { this.mark = mark; }
+
+    public String getMarkType() { return markType; }
+
+    public void setMarkType(String markType) { this.markType = markType; }
+
+    @Column(nullable = true)
+
+    private String markType;
+
     public int getCourse() {
         return primaryKey.getCourse();
     }
