@@ -5,6 +5,18 @@ ALTER TABLE semester CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ALTER TABLE student CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ALTER TABLE available_courses CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
+# available courses data
+
+INSERT INTO available_courses VALUES (0,941,33,0,"ساعت 5 تا 3",4);
+INSERT INTO available_courses VALUES (1,941,33,1,"ساعت 5 تا 3",5);
+INSERT INTO available_courses VALUES (2,941,33,2,"ساعت 5 تا 3",6);
+INSERT INTO available_courses VALUES (3,941,33,3,"ساعت 5 تا 3",7);
+INSERT INTO available_courses VALUES (4,941,33,4,"ساعت 5 تا 3",8);
+INSERT INTO available_courses VALUES (5,941,33,5,"ساعت 5 تا 3",9);
+INSERT INTO available_courses VALUES (6,941,33,6,"ساعت 5 تا 3",3);
+
+
+# courses data
 
 insert into course VALUES (0,"مبانی کامپیوتر","1","اصلی",3);
 insert into course VALUES (1,"کارگاه کامپیوتر","1","پایه",1);
@@ -95,7 +107,7 @@ INSERT INTO semester VALUES (5,2,9,941,17.3,"اعلام شده","عادی","قب
 
 # #####
 
-INSERT INTO semester VALUES (6,0,3,941,18,"اعلام شده","قبول شده");
+INSERT INTO semester VALUES (6,0,3,941,18,"اعلام شده","عادی","قبول شده");
 
 INSERT INTO semester VALUES (6,1,3,941,19.5,"اعلام شده","عادی","قبول شده");
 

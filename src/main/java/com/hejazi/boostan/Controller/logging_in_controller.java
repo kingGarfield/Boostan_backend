@@ -7,6 +7,7 @@ import com.hejazi.boostan.database.redis.userSessionRepository;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +21,7 @@ public class logging_in_controller {
     private userSessionRepository userSessionRepository;
 
 
-    @RequestMapping("/signup")
+    @RequestMapping(value = "/signup"  , produces = MediaType.APPLICATION_JSON_VALUE)
     public String signup(@RequestParam(name = "username", required = true) String username,
                          @RequestParam(name = "password", required = true) String password,
                          @RequestParam(name = "api_key", required = true) String api_key) {
@@ -47,7 +48,7 @@ public class logging_in_controller {
         return jsonObject.toString();
     }
 
-    @RequestMapping("/signin")
+    @RequestMapping(value = "/signin"  , produces = MediaType.APPLICATION_JSON_VALUE)
     public String signin(@RequestParam(name = "username", required = true) String username,
                          @RequestParam(name = "password", required = true) String password,
                          @RequestParam(name = "api_key", required = true) String api_key) {

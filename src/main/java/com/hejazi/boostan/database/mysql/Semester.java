@@ -13,6 +13,17 @@ public class Semester {
     @Column(nullable = false)
     private String status;
 
+    public Semester() {
+    }
+
+    public Semester(int course, int student, int teacher, int term, String status, double mark, String markType, String registerType) {
+        this.primaryKey = new key(course,student,teacher,term);
+        this.status = status;
+        this.mark = mark;
+        this.markType = markType;
+        this.registerType = registerType;
+    }
+
     @Column(nullable = true)
     private double mark;
 
@@ -30,13 +41,7 @@ public class Semester {
     @Column
     private String registerType;
 
-    public String getRegisterType() {
-        return registerType;
-    }
-
-    public void setRegisterType(String registerType) {
-        this.registerType = registerType;
-    }
+    public String getRegisterType() { return registerType; }
 
     public int getCourse() {
         return primaryKey.getCourse();
@@ -67,6 +72,16 @@ public class Semester {
 class key implements Serializable{
     @Column
     private int course;
+
+    public key() {
+    }
+
+    public key(int course, int student, int teacher, int term) {
+        this.course = course;
+        this.student = student;
+        this.teacher = teacher;
+        this.term = term;
+    }
 
     @Column
     private int student;
